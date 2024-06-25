@@ -1,1 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #f4d04e;
+    --white: #ffffff;
+    --grey: #808080;
+    --black: #121212;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    font-family: 'Figtree', sans-serif;
+}
+
+.container-main {
+    width: 384px;
+    height: 522px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px var(--black);
+    border-radius: 20px;
+    padding: 24px;
+    gap: 24px;
+    background-color: var(--white);
+    filter: drop-shadow(var(--black) 8px 8px);
+}
+
+.container-main > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--black);
+}
+
+.content :nth-child(1){
+    background-color: var(--yellow);
+    font-weight: 800;
+    font-size: small;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.content :nth-child(2){
+    font-weight: normal;
+    font-size: medium;
+}
+
+.content :nth-child(3){
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.content :nth-child(4){
+    line-height: 1.5rem;
+    font-weight: normal;
+    font-size: medium;
+    color: var(--grey);
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    font-weight: 800;
+}
+
+.author > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
